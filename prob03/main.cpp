@@ -5,17 +5,19 @@
 
 int main()
 {
-  double cost, tax;
-  int total;
-  
-  std::cout << "What is the total meal "cost"?";
-  std::cin >> 44.50;
+  double cost, tax, tip;
+  double total;
 
-  tax = cost * 0.20;
+  std::cout << "What is the cost of the meal? ";
+  std::cin >> cost;
 
-  total = tax + cost
+  tip = cost * 0.20;
 
-  std::cout << "The \"cost\" of the meal is 53.4./n";
+  tax = cost *0.0775;
+
+  total = tax + tip + cost;
+
+  std::cout << "The total cost of the meal is "<< total <<".\n";
 
   return 0;
 }
